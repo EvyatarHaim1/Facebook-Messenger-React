@@ -1,3 +1,18 @@
 .App {
   text-align: center;
 }
+
+.app_form{
+  padding: 20px;
+  position: fixed;
+  bottom:0;
+  z-index: 1;
+  background-color: #e9e9eb;
+  display: flex;
+  width: 100%;
+  margin: 10px;
+}
+
+.msgIcon{
+  margin-top: 40px;
+}
