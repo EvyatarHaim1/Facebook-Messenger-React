@@ -6,7 +6,7 @@ import './App.css';
 function App() {
 
   const [input, setInput] = useState('');
-  const [messages, setMessages] = useState([{username:''}, {text:''}]);
+  const [messages, setMessages] = useState([{username:'Yanis', text:'Hola papasito'}]);
   const [username, setUsername] = useState('');
 
   useEffect(() => {
@@ -38,10 +38,7 @@ function App() {
 </FormControl>
           
           {messages.map(message => (
-              <Message username={message.username}
-                       key={message.text}
-                       text={message.text} 
-              />
+              <Message username={username} message={message} />
             ))
           }
     </div>
